@@ -4,7 +4,17 @@ body {
   background-size: 100px 100px; */
   /* background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/denim.png); */
   background-color: black;
-
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 p{
   color:#F1E9DB;
@@ -22,7 +32,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 grid-column: 2;
-grid-row: 2;
+grid-row: 3;
 gap: 10px;
 }
 .aboutMeContainer{
@@ -30,7 +40,7 @@ gap: 10px;
   justify-content: center;
   align-items: center;
   grid-column: 3;
-  grid-row: 3;
+  grid-row: 2;
 
 }
 .projectsContainer{
@@ -41,28 +51,40 @@ gap: 10px;
   grid-row: 4;
 }
 
-.aboutMeBtn, .projectsBtn{
+.aboutMeBtn, .projectsBtn {
   height: 40px;
   width: 350px;
   display: flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   color: black;
   font-family: Gabarito;
   font-size: 60px;
-  background-color: #F1E9DB;
+  background: linear-gradient(to right, black, white); 
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: all 0.3s ease;
   padding: 15px;
+  position: relative;
 }
+
+.aboutMeBtn:hover, .projectsBtn:hover {
+  background-position: 0 0; 
+  color: white; 
+  text-decoration: underline; 
+}
+
 
 .whiteLine{
   width: 80%;
   height: 25px;
-  background-color: #F1E9DB;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgb(56, 56, 56)); 
 }
 .mainBody{
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
 }
 .cardTitle{
   font-size: 46px;
