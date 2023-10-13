@@ -1,0 +1,28 @@
+
+.header{
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  justify-self: stretch;
+  border: 1px solid orange;
+  background-color: orange;
+}
+.sidebar{
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color:blue;
+
+}
+
+
+.footer{
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  justify-self: stretch;
+  background-color:aqua
+}
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  
+}

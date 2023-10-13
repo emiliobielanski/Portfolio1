@@ -1,0 +1,69 @@
+body {
+  /* background-image: radial-gradient(#212121 5%, transparent 5%), radial-gradient(#FAFAFA 5%, transparent 5%);
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px; */
+  /* background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/denim.png); */
+  background-color: black;
+
+}
+p{
+  color:#F1E9DB;
+  margin: 0;
+  font-family: Gabarito;
+  font-size: 30px;
+}
+.headerTitle{
+  grid-column: 1;
+  grid-row: 1;
+  color: #F1E9DB;
+}
+.leftCardContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+grid-column: 2;
+grid-row: 2;
+gap: 10px;
+}
+.aboutMeContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  grid-row: 3;
+
+}
+.projectsContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.aboutMeBtn, .projectsBtn{
+  height: 40px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: Gabarito;
+  font-size: 60px;
+  background-color: #F1E9DB;
+  padding: 15px;
+}
+
+.whiteLine{
+  width: 80%;
+  height: 25px;
+  background-color: #F1E9DB;
+}
+.mainBody{
+  display: grid;
+  grid-template-columns: 10% 40% 40% 10%;
+  grid-template-rows: repeat(6, 1fr);
+}
+.cardTitle{
+  font-size: 46px;
+}
