@@ -22,6 +22,13 @@ p{
   font-family: Gabarito;
   font-size: 30px;
 }
+h1, h2{
+  color:#F1E9DB;
+  font-family: Gabarito;
+  align-self: center;
+  justify-self: center;
+  grid-column-start: 2;
+}
 .headerTitle{
   grid-column: 1;
   grid-row: 1;
@@ -82,10 +89,31 @@ gap: 10px;
   background: linear-gradient(to right, rgb(255, 255, 255), rgb(56, 56, 56)); 
 }
 .mainBody{
+  margin-top: 5%;
   display: grid;
   grid-template-columns: 10% 40% 40% 10%;
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 .cardTitle{
   font-size: 46px;
+}
+
+/* About Me */
+.abtMeH1{
+  margin-top: 3%;
+  text-align: center;
+}
+.abtMeH2{
+  color: #F1E9DB;
+}
+.aboutMeBody{
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.aboutMeTextContainer{
+  max-width: 40%; /* Make the text container take up the full width */
+  margin: 0 auto; /* Center the text container horizontally */
 }
