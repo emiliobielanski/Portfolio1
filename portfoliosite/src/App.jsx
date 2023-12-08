@@ -1,17 +1,15 @@
 
-import './App.css'
-import Main from './components/Main'
-import Header from './components/Header'
+import React from 'react';
+import Main from './components/Main';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Header'; // Import the Projects component
 
 function App() {
-
-
   return (
-    <div className='body'>
-      <Header />
+    <div>
       <Main />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
